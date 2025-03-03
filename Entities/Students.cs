@@ -18,5 +18,10 @@ namespace StudentManagementSystem_ADO.NET.Entities
 
         public string? Email { get; set; }
         public decimal? Grade { get; set; }
+
+        public override string ToString()
+        {
+            return $"\n[ID : {ID}], [Name : {FirstName} {LastName}], [Age : {Age}], [Email : {Email}], [Grade : {Grade}]\n";
+        }
     }
 }
